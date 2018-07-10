@@ -11,6 +11,7 @@ function onSubmit() {
   listItem.className = 'twitte';
   listItem.innerHTML = userText;
   document.getElementById('posts').appendChild(listItem);
+
   var cleanText = document.getElementById('text');
   cleanText.value = '';
   char(); //atualizando a contagem dos caracteres
