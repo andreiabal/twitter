@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link href="main.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css' integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt' crossorigin='anonymous'>
   <title>Twitter</title>  
 </head>
 
@@ -14,26 +15,22 @@
 
   <main id="main">
     <section id="profile">
-      <h2 class="profile"><b>Perfil</b></h2>
-      <p>O que será que será?</p>      
+      <h3 class="profile"><b>O que será, que será?</b></h3>
+      <p>Que andam sussurrando em versos e trovas<br>Que andam combinando no breu das tocas<br>Que anda nas cabeças, anda nas bocas<br>Que vive nas ideias desses amantes<br>Que cantam os poetas mais delirantes<br>Que juram os profetas embriagados...</p>      
     </section>
 
     <form id="form" onsubmit="return onSubmit()">
       <div class="textarea">
-        <textarea id="text" placeholder="O que você está pensando?" maxlength=140></textarea>
+        <textarea id="text" placeholder="O que está acontecendo?" onKeyUp="char()" onKeyDown="char()" ></textarea>
         <span id="count">140</span>
-        <input type="submit" value="TWITTE" class="button">
+        <input disabled onclick="char()" type="submit" value="TWITTE" id="button">
       </div>
     </form>
 
-    <ul id="posts" class="posts">
-      <li class="twitte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</li>
-    </ul>
+    <ul id="posts" class="posts"></ul>
   </main>
 
   <script type="text/javascript" src="arquivo.js">
   </script>
 </body>
 </html>
-
-

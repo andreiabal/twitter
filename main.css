@@ -1,15 +1,16 @@
-body{
-  font-family: cursive;
-  color:  #333;
+* {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body {
+  color: #e6ecf0;
 }
 #header {
   top: 0;
   margin-top: 0px;
   position: fixed;
-  background-color: #5382b1;
+  background-color:#6AD1F2;
   width: 98.8%;
   height: 50px;
-  font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: 500;
   text-align: center; 
@@ -19,15 +20,18 @@ body{
   padding: 2px;
 }
 #main {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/800px-Monet_-_Impression%2C_Sunrise.jpg");
-  background-size: 100% 100%;
-  background-position: center;
-  height: 620px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 95vh; /*Altura da tela do browser*/
   width: 100%;
+  padding-bottom: 50px;
 }
 #profile {
   width: 450px;
-  height: 250px;
+  height: 200px;
   background-color: white;
   padding: 5px;
   margin: 50px;
@@ -41,7 +45,7 @@ body{
   margin: 50px;
   float: right;
   width: 450px;
-  height: 250px;
+  height: 200px;
 }
 textarea {
   width: 450px;
@@ -53,16 +57,16 @@ textarea {
   overflow: hidden;
   overflow-wrap: break-word;
   border: none;
-  border-bottom: 2px solid #5382b1;
+  border-bottom: 2px solid #6AD1F2;
 }
-.button {
-  background-color: #5382b1;
+#button {
+  background-color: #6AD1F2;
   color: white;
   border: none;
   border-radius: 2px;
   cursor: pointer;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-weight: bold; 
   padding: 15px;
   margin: 25px 0;
   display: flex;
@@ -73,7 +77,7 @@ textarea {
   padding: 5px;
   padding-top: 45px;
   font-size: 25px;
-  color: #5382b1;
+  color: #6AD1F2;
 }
 .posts {
   font-size: 15px;
@@ -83,13 +87,13 @@ textarea {
 .twitte {
   font-size: 15px;
   color: rgb(141, 130, 130);
-  height: 60px;
+  height: auto;
   background-color: white;
   clear: both;
   margin-right: 50px;
   margin-left: 50px;
   list-style-type: none;
-  padding: 5px;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  white-space: pre-wrap; /*Qual a diferenca entre o pre-line?*/
 }
-
