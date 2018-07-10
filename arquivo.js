@@ -11,7 +11,7 @@ function onSubmit() {
   }  
 //Inserir twitte na página//
   listItem.innerHTML = '<span>' + 'Postado às ' + calculateTime + '</span>' + '<br>' + userText;
-  document.getElementById('posts').appendChild(listItem);
+  document.getElementById('posts').prepend(listItem); // prepend para deixar o último twitte digitado aparecer em primeiro lugar //
 
 //Atualizar página//
   var cleanText = document.getElementById('text');

@@ -98,6 +98,7 @@ input[type=submit]:hover {
   padding: 10px;
   margin-bottom: 15px;
   white-space: pre-wrap;
+  word-wrap: break-word;
 }
 span {
   font-size: 12px;
