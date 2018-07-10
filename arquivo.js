@@ -1,34 +1,25 @@
-// onSubmit - passos:
-// 1. criar função no submit
-// 2. pegar o texto do input
-// 3. criar li
-// 4. colocar texto no li
-// 5. colocar o elemento li no ul
-
 function onSubmit() {
-  var userText = document.getElementById('text').value;
+	var userText = document.getElementById('text').value;
   var listItem = document.createElement('li');
   listItem.className = 'twitte';
 
-/* Horário em que o twitte foi enviado*/
+//Horário em que o twitte foi enviado//
   var date = new Date();
   var calculateTime = date.getHours() + ':' + date.getMinutes();
   if (date.getMinutes() < 10) {
     calculateTime = date.getHours() + ':' + '0' + date.getMinutes();
-  }
-  
-/* Inserir twitte na página*/
+  }  
+//Inserir twitte na página//
   listItem.innerHTML = '<span>' + 'Postado às ' + calculateTime + '</span>' + '<br>' + userText;
   document.getElementById('posts').appendChild(listItem);
 
-/*Atualizar*/
+//Atualizar página//
   var cleanText = document.getElementById('text');
   cleanText.value = '';
-  char(); //atualizando a contagem dos caracteres
+  char(); //atualizando a contagem dos caracteres//
   return false;
 }
-
-//Contar caracteres e alterar as cores do contador
+//Contar caracteres e alterar as cores do contador//
 function char() {
   var max = new Number();
   max = 140;
@@ -46,13 +37,13 @@ function char() {
   if (counting >= 20) {
     document.getElementById('count').style.color='#6AD1F2';
   }
-  // Atualizar o status do botão
+  // Atualizar o status do botão//
   if(counting >= 0 && counting < 140) {
   	document.getElementById('button').disabled='';
   } else {
     document.getElementById('button').disabled='disabled';
   }
-  /* Aumentar a altura da área de texto*/
+  //Aumentar a altura da área de texto//
   var textarea = document.querySelector('textarea');
   textarea.style.height = '';
   textarea.style.height = textarea.scrollHeight + 'px';
