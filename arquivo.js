@@ -1,5 +1,5 @@
 function onSubmit() {
-	var userText = document.getElementById('text').value;
+  var userText = document.getElementById('text').value;
   var listItem = document.createElement('li');
   listItem.className = 'twitte';
 
@@ -39,7 +39,7 @@ function char() {
   }
   // Atualizar o status do botão//
   if(counting >= 0 && counting < 140) {
-  	document.getElementById('button').disabled='';
+    document.getElementById('button').disabled='';
   } else {
     document.getElementById('button').disabled='disabled';
   }
