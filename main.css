@@ -45,11 +45,10 @@ body {
   margin: 50px;
   float: right;
   width: 450px;
-  height: 200px;
 }
 textarea {
   width: 450px;
-  height: 120px;
+  height: 100px;
   text-align: left;
   font-size: 15px;
   color: rgb(141, 130, 130);

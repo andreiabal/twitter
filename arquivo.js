@@ -52,6 +52,10 @@ function char() {
   } else {
     document.getElementById('button').disabled='disabled';
   }
+  /* Aumentar a altura da área de texto*/
+  var textarea = document.querySelector('textarea');
+  textarea.style.height = '';
+  textarea.style.height = textarea.scrollHeight + 'px';
 }
 
 
