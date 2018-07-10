@@ -9,9 +9,19 @@ function onSubmit() {
   var userText = document.getElementById('text').value;
   var listItem = document.createElement('li');
   listItem.className = 'twitte';
-  listItem.innerHTML = userText;
+
+/* Horário em que o twitte foi enviado*/
+  var date = new Date();
+  var calculateTime = date.getHours() + ':' + date.getMinutes();
+  if (date.getMinutes() < 10) {
+    calculateTime = date.getHours() + ':' + '0' + date.getMinutes();
+  }
+  
+/* Inserir twitte na página*/
+  listItem.innerHTML = '<span>' + 'Postado às ' + calculateTime + '</span>' + '<br>' + userText;
   document.getElementById('posts').appendChild(listItem);
 
+/*Atualizar*/
   var cleanText = document.getElementById('text');
   cleanText.value = '';
   char(); //atualizando a contagem dos caracteres

@@ -100,3 +100,8 @@ input[type=submit]:hover {
   margin-bottom: 15px;
   white-space: pre-wrap; /*Qual a diferenca entre o pre-line?*/
 }
+span {
+  font-size: 12px;
+  color: #1DA1F2;
+  float: left;
+}
